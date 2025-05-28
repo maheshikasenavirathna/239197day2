@@ -13,6 +13,11 @@ class LinkedList:
         while printaval is not None:
             print(printaval.data)
             printaval = printaval.next
+    def _inset_at_Begining__(self):
+        newNode= Node(newdata)
+        newNode.next=self.head
+        self.head=newNode
+    
 
 
 l1=LinkedList()
