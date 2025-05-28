@@ -13,7 +13,7 @@ class LinkedList:
         while printaval is not None:
             print(printaval.data)
             printaval = printaval.next
-    def _inset_at_Begining__(self):
+    def _inset_at_Begining_(self,newdata):
         newNode= Node(newdata)
         newNode.next=self.head
         self.head=newNode
@@ -28,4 +28,11 @@ l4=Node("Lambogini")
 l1.head.next=l2
 l2.next=l3
 l3.next=l4
+
+l1.listprint()
+print("")
+l1._inset_at_Begining("benz")
+l1.listprint()
+l1._inset_at_Begining("chr")
+print("")
 l1.listprint()
